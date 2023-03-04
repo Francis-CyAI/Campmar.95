@@ -4,8 +4,8 @@
 }
 .loader {
     position: fixed;
-    top: 45%;
-    left: 45%;
+    top: 40%;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 5;
     width: 100px;
@@ -17,6 +17,12 @@
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
 }
+@media screen and (max-width: 560px) {
+    .loader {
+        width: 75px;
+        height: 75px;
+    }
+}
 .loader::after {
     z-index: 5;
     content: '';
@@ -27,6 +33,21 @@
     transform: translate(-50%, -50%);
     width: 75%;
     height: 75%;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: var(--loader-inner-color) transparent;
+}   
+}
+.loader::after {
+    z-index: 5;
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
     border: 5px solid;
     border-color: var(--loader-inner-color) transparent;
