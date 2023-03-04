@@ -15,7 +15,7 @@ setTimeout(() => {
 	let itemPrompt = prompt('How many demo items would you like us to add?');
 	let servicePrompt = prompt('How many demo services would you like us to add?');
 	initiateRender(itemPrompt, servicePrompt);
-}, 1000);
+}, 1500);
 
 
 document.getElementById('logBtn').addEventListener('click', () => {
