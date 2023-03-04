@@ -4,8 +4,8 @@
 }
 .loader {
     position: fixed;
-    top: 45%;
-    left: 45%;
+    top: 40%;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 5;
     width: 100px;
@@ -21,15 +21,21 @@
     z-index: 5;
     content: '';
     box-sizing: border-box;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    position: fixed;
+    left: 40%;
+    top: 40%;
     transform: translate(-50%, -50%);
-    width: 75%;
-    height: 75%;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
     border: 5px solid;
     border-color: var(--loader-inner-color) transparent;
+}
+@media screen and (max-width: 560px) {
+    .loader {
+        width: 60px;
+        height: 60px;
+    }
 }
 @keyframes rotation {
     0% {
