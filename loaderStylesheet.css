@@ -22,19 +22,19 @@
     content: '';
     box-sizing: border-box;
     position: fixed;
-    left: 40%;
-    top: 40%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     border-radius: 50%;
     border: 5px solid;
     border-color: var(--loader-inner-color) transparent;
 }
 @media screen and (max-width: 560px) {
     .loader {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
 }
 @keyframes rotation {
